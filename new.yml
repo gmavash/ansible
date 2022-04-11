@@ -6,5 +6,5 @@
   - name: creating a user
     user: 
       name: "{{ id }}"
-      password: "{{ pwd }}"
+      password: "{{ pwd | password_hash('sha512') }}"
 
