@@ -2,14 +2,6 @@
 - name: create a user
   hosts: all
 
-  vars_prompt:
-    - name: id
-      prompt: "what is your username"
-      private: no
-
-    - name: pwd
-      prompt: "what is your password"
-
   tasks:
   - name: creating a user
     user: 
